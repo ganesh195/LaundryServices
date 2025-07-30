@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  padding: 0 40px;
+  background-color: white;
+}
+
+.left {
+  display: flex;
+  height: 100px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.right ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  color: rgb(120, 120, 120);
+}
+
+.username {
+  color: rgb(0, 153, 255);
+  background-color: rgb(230, 245, 255);
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+main {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 80px;
+  margin-top: 15px;
+}
+
+.leftDiv {
+  max-width: 40vw;
+}
+
+.leftDiv h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+}
+
+.ser {
+  font-size: 2.4em;
+  color: #00aaff;
+}
+
+.leftDiv p {
+  margin-top: 10px;
+  font-size: 0.98em;
+  color: #666;
+  line-height: 1.4;
+}
+
+.leftDiv > button {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+
+.leftDiv > button:hover {
+  background-color: #008fcc;
+  color: #000;
+}
+
+.rightDiv img {
+  width: 45vw;
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .username {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .left img {
+    width: 80px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+    height: auto;
+  }
+
+  .leftDiv,
+  .rightDiv {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .leftDiv h1 {
+    font-size: 1.8em;
+  }
+
+  .ser {
+    font-size: 1.7em;
+  }
+
+  .leftDiv p {
+    font-size: 0.94em;
+  }
+
+  .leftDiv button {
+    width: 80%;
+    padding: 12px 20px;
+    color: #fff;
+  }
+
+  .right img {
+    width: 100%;
+    height: auto;
+  }
+}
